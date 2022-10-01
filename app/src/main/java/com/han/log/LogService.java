@@ -9,13 +9,13 @@ import android.graphics.PixelFormat;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
-import android.support.v4.widget.CursorAdapter;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.WindowManager;
+import android.widget.CursorAdapter;
 import android.widget.Filter;
+import android.widget.SimpleCursorAdapter;
+
 import com.han.devtool.R;
 import com.nolanlawson.logcat.data.LogLine;
 import com.nolanlawson.logcat.data.SearchCriteria;
@@ -73,7 +73,7 @@ public class LogService extends Service {
     mDbWriter.insert(MySQLite.DB_NAME, null, mContentValues);
   }
 
-  @Nullable @Override public IBinder onBind(Intent intent) {
+   @Override public IBinder onBind(Intent intent) {
     return null;
   }
 

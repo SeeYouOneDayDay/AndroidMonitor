@@ -9,7 +9,6 @@ android {
     targetSdkVersion target_sdk_version
     versionCode version_code
     versionName version_name
-    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
   }
   buildTypes {
     release {
@@ -21,15 +20,10 @@ android {
 
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
-  androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-    exclude group: 'com.android.support', module: 'support-annotations'
-  })
-
   implementation project(':ezy-settings-compat')
   implementation project(':curvechartlib-release')
   implementation project(':catlog')
   implementation "com.android.support:appcompat-v7:$android_support_version"
   implementation "de.greenrobot:eventbus:2.4.0"
   implementation "com.android.support:design:$android_support_version"
-  testImplementation "junit:junit:4.12"
 }

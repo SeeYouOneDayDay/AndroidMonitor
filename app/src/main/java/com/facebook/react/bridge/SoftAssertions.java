@@ -9,7 +9,6 @@
 
 package com.facebook.react.bridge;
 
-import android.support.annotation.Nullable;
 /**
  * Utility class to make assertions that should not hard-crash the app but instead be handled by the
  * Catalyst app {@link NativeModuleCallExceptionHandler}. See the javadoc on that class for
@@ -18,32 +17,32 @@ import android.support.annotation.Nullable;
  */
 public class SoftAssertions {
 
-  /**
-   * Throw {@link AssertionException} with a given message. Use this method surrounded with
-   * {@code if} block with assert condition in case you plan to do string concatenation to produce
-   * the message.
-   */
-  public static void assertUnreachable(String message) {
-    throw new AssertionException(message);
-  }
-
-  /**
-   * Asserts the given condition, throwing an {@link AssertionException} if the condition doesn't
-   * hold.
-   */
-  public static void assertCondition(boolean condition, String message) {
-    if (!condition) {
-      throw new AssertionException(message);
+    /**
+     * Throw {@link AssertionException} with a given message. Use this method surrounded with
+     * {@code if} block with assert condition in case you plan to do string concatenation to produce
+     * the message.
+     */
+    public static void assertUnreachable(String message) {
+        throw new AssertionException(message);
     }
-  }
 
-  /**
-   * Asserts that the given Object isn't null, throwing an {@link AssertionException} if it was.
-   */
-  public static <T> T assertNotNull(@Nullable T instance) {
-    if (instance == null) {
-      throw new AssertionException("Expected object to not be null!");
+    /**
+     * Asserts the given condition, throwing an {@link AssertionException} if the condition doesn't
+     * hold.
+     */
+    public static void assertCondition(boolean condition, String message) {
+        if (!condition) {
+            throw new AssertionException(message);
+        }
     }
-    return instance;
-  }
+
+    /**
+     * Asserts that the given Object isn't null, throwing an {@link AssertionException} if it was.
+     */
+    public static <T> T assertNotNull(T instance) {
+        if (instance == null) {
+            throw new AssertionException("Expected object to not be null!");
+        }
+        return instance;
+    }
 }

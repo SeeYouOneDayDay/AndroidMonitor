@@ -9,14 +9,12 @@
 
 package com.facebook.react.devsupport;
 
-import com.facebook.react.bridge.ReadableArray;
-import com.facebook.react.bridge.ReadableMap;
-import com.facebook.react.common.MapBuilder;
-import com.facebook.react.devsupport.interfaces.StackFrame;
+import com.facebook.react.bridge.*;
+import com.facebook.react.common.*;
+import com.facebook.react.devsupport.interfaces.*;
 import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import android.support.annotation.Nullable;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -116,7 +114,7 @@ public class StackTraceHelper {
    * Convert a JavaScript stack trace (see {@code parseErrorStack} JS module) to an array of
    * {@link StackFrame}s.
    */
-  public static StackFrame[] convertJsStackTrace(@Nullable ReadableArray stack) {
+  public static StackFrame[] convertJsStackTrace( ReadableArray stack) {
     int size = stack != null ? stack.size() : 0;
     StackFrame[] result = new StackFrame[size];
     for (int i = 0; i < size; i++) {

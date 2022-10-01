@@ -7,7 +7,7 @@ import java.util.TimerTask;
 
 public class MemoryMonitor {
   private static class InstanceHolder {
-    private static MemoryMonitor sInstance = new MemoryMonitor();
+    public static MemoryMonitor sInstance = new MemoryMonitor();
   }
 
   private MemoryMonitor() {

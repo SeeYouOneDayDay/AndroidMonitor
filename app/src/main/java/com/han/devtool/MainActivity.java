@@ -1,30 +1,28 @@
 package com.han.devtool;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.han.activitytracker.AccessibilityUtil;
-import com.han.activitytracker.TrackerService;
-import com.han.cpu.CPUService;
-import com.han.fps.FPSService;
+import com.han.activitytracker.*;
+import com.han.cpu.*;
+import com.han.fps.*;
 import com.han.log.LogService;
 import com.nolanlawson.logcat.helper.SuperUserHelper;
-import ezy.assist.compat.RomUtil;
-import ezy.assist.compat.SettingsCompat;
+import ezy.assist.compat.*;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
