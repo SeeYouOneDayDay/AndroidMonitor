@@ -1,8 +1,8 @@
 package com.nolanlawson.logcat.helper;
 
-import java.lang.reflect.Field;
-
 import android.os.Build;
+
+import java.lang.reflect.Field;
 
 /**
  * Determine what version of Android the device is running.

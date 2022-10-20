@@ -18,12 +18,6 @@
 
 package com.nolanlawson.logcat.data;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 import android.content.Context;
 import android.text.TextPaint;
 import android.text.TextUtils;
@@ -42,6 +36,12 @@ import com.nolanlawson.logcat.helper.PreferenceHelper;
 import com.nolanlawson.logcat.util.LogLineAdapterUtil;
 import com.nolanlawson.logcat.util.StopWatch;
 import com.nolanlawson.logcat.util.UtilLogger;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * A ListAdapter that manages a ListView backed by an array of arbitrary

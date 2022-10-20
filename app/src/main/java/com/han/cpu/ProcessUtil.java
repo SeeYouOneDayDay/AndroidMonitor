@@ -3,6 +3,7 @@ package com.han.cpu;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.os.Build;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

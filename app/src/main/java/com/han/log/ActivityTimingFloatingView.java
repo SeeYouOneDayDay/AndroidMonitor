@@ -9,8 +9,10 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.han.devtool.R;
 import com.nolanlawson.logcat.data.LogLine;
+
 import de.greenrobot.event.EventBus;
 
 public class ActivityTimingFloatingView extends LinearLayout {

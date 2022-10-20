@@ -1,13 +1,13 @@
 package com.nolanlawson.logcat.helper;
 
+import com.nolanlawson.logcat.util.UtilLogger;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import com.nolanlawson.logcat.util.UtilLogger;
 
 public class LogcatHelper {
 	

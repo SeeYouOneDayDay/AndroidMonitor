@@ -31,7 +31,6 @@ import android.util.Log;
 
 import java.lang.reflect.Method;
 
-
 public class SettingsCompat {
     private static final String TAG = "ezy-settings-compat";
 

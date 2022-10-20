@@ -1,14 +1,13 @@
 package com.nolanlawson.logcat.data;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import android.text.TextUtils;
 import android.util.Log;
 
 import com.nolanlawson.logcat.util.LogLineAdapterUtil;
 import com.nolanlawson.logcat.util.UtilLogger;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class LogLine {
 

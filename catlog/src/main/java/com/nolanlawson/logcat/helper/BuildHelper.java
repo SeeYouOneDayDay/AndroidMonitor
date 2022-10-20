@@ -1,13 +1,13 @@
 package com.nolanlawson.logcat.helper;
 
+import android.os.Build;
+
 import java.lang.reflect.Field;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map.Entry;
 import java.util.SortedMap;
 import java.util.TreeMap;
-
-import android.os.Build;
 
 public class BuildHelper {
 

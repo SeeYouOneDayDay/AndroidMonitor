@@ -1,17 +1,17 @@
 package com.nolanlawson.logcat.reader;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Collections;
-import java.util.List;
-
 import android.text.TextUtils;
 
 import com.nolanlawson.logcat.helper.LogcatHelper;
 import com.nolanlawson.logcat.helper.RuntimeHelper;
 import com.nolanlawson.logcat.helper.VersionHelper;
 import com.nolanlawson.logcat.util.UtilLogger;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Collections;
+import java.util.List;
 
 public class SingleLogcatReader extends AbsLogcatReader {
 

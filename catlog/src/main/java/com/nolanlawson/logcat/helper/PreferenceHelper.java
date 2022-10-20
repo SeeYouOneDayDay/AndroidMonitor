@@ -1,12 +1,5 @@
 package com.nolanlawson.logcat.helper;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
@@ -17,6 +10,13 @@ import com.nolanlawson.logcat.data.ColorScheme;
 import com.nolanlawson.logcat.util.StringUtil;
 import com.nolanlawson.logcat.util.UtilLogger;
 import com.nolanlawson.logcat.widget.MultipleChoicePreference;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class PreferenceHelper {
 	

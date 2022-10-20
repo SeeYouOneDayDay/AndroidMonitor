@@ -16,13 +16,13 @@ https://github.com/jackuhan/AndroidMonitor/releases/download/1.0.0/app-debug.apk
 ### cpu和内存使用率记录
 正在开发中。
 
-<img src="screenshots/pic4.jpg" width="50%" height="40%" alt="Screenshot_1">
-<img src="screenshots/pic5.jpg" width="50%" height="40%" alt="Screenshot_1">
+<img src="https://raw.githubusercontent.com/hhhaiai/Picture/main/img/202210201426834.jpg" width="50%" height="40%" alt="Screenshot_1">
+<img src="https://raw.githubusercontent.com/hhhaiai/Picture/main/img/202210201427150.jpg" width="50%" height="40%" alt="Screenshot_1">
 
 
 打开fpsmonitor需要打开悬浮窗权限。
 
-<img src="screenshots/pic2.jpg" width="50%" height="40%" alt="Screenshot_1">
+<img src="https://raw.githubusercontent.com/hhhaiai/Picture/main/img/202210201427437.jpg" width="50%" height="40%" alt="Screenshot_1">
 
 
 # 作者联系方式

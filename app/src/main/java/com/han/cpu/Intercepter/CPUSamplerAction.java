@@ -1,11 +1,10 @@
 package com.han.cpu.Intercepter;
 
 import android.util.Log;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
-
-
 
 public class CPUSamplerAction {
     private int mPid;

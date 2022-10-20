@@ -1,5 +1,9 @@
 package com.nolanlawson.logcat.reader;
 
+import android.os.AsyncTask;
+
+import com.nolanlawson.logcat.util.UtilLogger;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -8,10 +12,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-
-import android.os.AsyncTask;
-
-import com.nolanlawson.logcat.util.UtilLogger;
 
 /**
  * Combines multipe buffered readers into a single reader that merges all input synchronously.

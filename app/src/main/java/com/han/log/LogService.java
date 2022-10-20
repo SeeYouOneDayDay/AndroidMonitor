@@ -24,7 +24,9 @@ import com.nolanlawson.logcat.reader.LogcatReader;
 import com.nolanlawson.logcat.reader.LogcatReaderLoader;
 import com.nolanlawson.logcat.util.ArrayUtil;
 import com.nolanlawson.logcat.util.LogLineAdapterUtil;
+
 import de.greenrobot.event.EventBus;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;

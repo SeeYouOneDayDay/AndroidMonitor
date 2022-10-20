@@ -1,7 +1,5 @@
 package com.nolanlawson.logcat.data;
 
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +10,8 @@ import android.widget.TextView;
 
 import com.nolanlawson.logcat.R;
 import com.nolanlawson.logcat.helper.PreferenceHelper;
+
+import java.util.List;
 
 public class TagAndProcessIdAdapter extends ArrayAdapter<CharSequence> {
 	

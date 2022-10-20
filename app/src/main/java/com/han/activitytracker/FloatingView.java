@@ -11,7 +11,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.han.devtool.R;
+
 import de.greenrobot.event.EventBus;
 
 public class FloatingView extends LinearLayout {

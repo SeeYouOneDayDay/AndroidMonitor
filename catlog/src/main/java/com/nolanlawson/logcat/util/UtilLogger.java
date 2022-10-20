@@ -1,8 +1,8 @@
 package com.nolanlawson.logcat.util;
 
-import java.util.Arrays;
-
 import android.util.Log;
+
+import java.util.Arrays;
 
 /**
  * Easier way to interact with logcat.

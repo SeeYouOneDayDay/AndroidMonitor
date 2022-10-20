@@ -4,6 +4,7 @@ import android.accessibilityservice.AccessibilityService;
 import android.content.Intent;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
+
 import de.greenrobot.event.EventBus;
 
 public class TrackerService extends AccessibilityService {

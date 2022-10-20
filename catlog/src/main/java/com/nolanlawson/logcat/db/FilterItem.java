@@ -2,7 +2,6 @@ package com.nolanlawson.logcat.db;
 
 import java.util.Comparator;
 
-
 public class FilterItem implements Comparable<FilterItem> {
 	
 	public static final Comparator<FilterItem> DEFAULT_COMPARATOR = new Comparator<FilterItem>(){

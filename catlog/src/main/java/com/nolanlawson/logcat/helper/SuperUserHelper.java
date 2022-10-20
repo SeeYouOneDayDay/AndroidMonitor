@@ -1,5 +1,13 @@
 package com.nolanlawson.logcat.helper;
 
+import android.content.Context;
+import android.os.Handler;
+import android.os.Looper;
+import android.widget.Toast;
+
+import com.nolanlawson.logcat.R;
+import com.nolanlawson.logcat.util.UtilLogger;
+
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -12,13 +20,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import android.content.Context;
-import android.os.Handler;
-import android.os.Looper;
-import android.widget.Toast;
-
-import com.nolanlawson.logcat.R;
-import com.nolanlawson.logcat.util.UtilLogger;
 /* 
  * Starting in JellyBean, the READ_LOGS permission must be requested as super user
  * or else you can only read your own app's logs.

@@ -1,9 +1,5 @@
 package com.nolanlawson.logcat.data;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +10,10 @@ import android.widget.TextView;
 
 import com.nolanlawson.logcat.R;
 import com.nolanlawson.logcat.helper.SaveLogHelper;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 
 public class LogFileAdapter extends ArrayAdapter<CharSequence> {
 

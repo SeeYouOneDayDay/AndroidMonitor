@@ -1,11 +1,11 @@
 package com.nolanlawson.logcat.data;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import android.text.TextUtils;
 
 import com.nolanlawson.logcat.util.StringUtil;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class SearchCriteria {
 

@@ -1,5 +1,13 @@
 package com.nolanlawson.logcat.helper;
 
+import android.content.Context;
+import android.os.Environment;
+import android.widget.Toast;
+
+import com.nolanlawson.logcat.R;
+import com.nolanlawson.logcat.data.SavedLog;
+import com.nolanlawson.logcat.util.UtilLogger;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -21,14 +29,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
-
-import android.content.Context;
-import android.os.Environment;
-import android.widget.Toast;
-
-import com.nolanlawson.logcat.R;
-import com.nolanlawson.logcat.data.SavedLog;
-import com.nolanlawson.logcat.util.UtilLogger;
 
 public class SaveLogHelper {
 

@@ -16,12 +16,6 @@
 
 package com.nolanlawson.logcat.data;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +27,12 @@ import android.widget.Filterable;
 import android.widget.TextView;
 
 import com.nolanlawson.logcat.util.UtilLogger;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * 

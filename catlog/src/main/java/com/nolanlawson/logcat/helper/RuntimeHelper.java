@@ -1,13 +1,13 @@
 package com.nolanlawson.logcat.helper;
 
+import android.text.TextUtils;
+
+import com.nolanlawson.logcat.util.ArrayUtil;
+
 import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.List;
-
-import android.text.TextUtils;
-
-import com.nolanlawson.logcat.util.ArrayUtil;
 
 /**
  * Helper functions for running processes.

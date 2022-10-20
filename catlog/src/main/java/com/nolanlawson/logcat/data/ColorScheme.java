@@ -1,13 +1,12 @@
 package com.nolanlawson.logcat.data;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import android.content.Context;
 
 import com.nolanlawson.logcat.R;
 import com.nolanlawson.logcat.util.ArrayUtil;
 
+import java.util.HashMap;
+import java.util.Map;
 
 public enum ColorScheme {
 	Dark (R.string.pref_theme_choice_dark_value, R.color.main_background_dark, 

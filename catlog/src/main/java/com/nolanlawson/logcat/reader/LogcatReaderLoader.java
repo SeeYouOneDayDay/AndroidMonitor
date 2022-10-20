@@ -1,11 +1,5 @@
 package com.nolanlawson.logcat.reader;
 
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcel;
@@ -13,6 +7,12 @@ import android.os.Parcelable;
 
 import com.nolanlawson.logcat.helper.LogcatHelper;
 import com.nolanlawson.logcat.helper.PreferenceHelper;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class LogcatReaderLoader implements Parcelable {
 

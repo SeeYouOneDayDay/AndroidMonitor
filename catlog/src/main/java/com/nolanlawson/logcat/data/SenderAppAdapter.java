@@ -1,12 +1,5 @@
 package com.nolanlawson.logcat.data;
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
-
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -31,6 +24,13 @@ import android.widget.Toast;
 
 import com.nolanlawson.logcat.R;
 import com.nolanlawson.logcat.util.UtilLogger;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Adapter that shows any apps in the system that respond to Intent.ACTION_SEND intents.  Filters out any apps in

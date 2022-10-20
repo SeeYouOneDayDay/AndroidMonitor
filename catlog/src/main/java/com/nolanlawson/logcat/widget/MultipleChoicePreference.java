@@ -1,9 +1,5 @@
 package com.nolanlawson.logcat.widget;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,6 +7,10 @@ import android.preference.ListPreference;
 import android.util.AttributeSet;
 
 import com.nolanlawson.logcat.util.StringUtil;
+
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Similar to a ListPreference, but uses a multi-choice list and saves the value as a comma-separated string.
