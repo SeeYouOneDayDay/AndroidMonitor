@@ -19,7 +19,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-
     <!--  'Sup Koush: https://plus.google.com/103583939320326217147/posts/T9xnMJEnzf1 -->
     <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
 

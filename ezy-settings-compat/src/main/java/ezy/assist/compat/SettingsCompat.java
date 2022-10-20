@@ -86,15 +86,15 @@ public class SettingsCompat {
 
     public static void gotoSoftPermissionDetailActivity(Context context) {
         Intent intent = new Intent();
-        intent.putExtra("packagename",context.getPackageName());
-        intent.putExtra("title","test");
+        intent.putExtra("packagename", context.getPackageName());
+        intent.putExtra("title", "test");
         //i管家包名 6.0有不相同的两款手机
         intent.setComponent(ComponentName.unflattenFromString("com.iqoo.secure/.safeguard.SoftPermissionDetailActivity"));
-        if (startSafely(context,intent)){
+        if (startSafely(context, intent)) {
             return;
         }
         intent.setComponent(ComponentName.unflattenFromString("com.vivo.permissionmanager/.activity.SoftPermissionDetailActivity"));
-        if (startSafely(context,intent)){
+        if (startSafely(context, intent)) {
             return;
         }
     }
@@ -194,14 +194,16 @@ public class SettingsCompat {
 
 
     private static boolean checkOp(Context context, int op) {
-        AppOpsManager manager = (AppOpsManager) context.getSystemService(Context.APP_OPS_SERVICE);
-        try {
-            Method method = AppOpsManager.class.getDeclaredMethod("checkOp", int.class, int.class,
-                    String.class);
-            return AppOpsManager.MODE_ALLOWED == (int) method.invoke(manager, op,
-                    Binder.getCallingUid(), context.getPackageName());
-        } catch (Exception e) {
-            Log.e(TAG, Log.getStackTraceString(e));
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+            AppOpsManager manager = (AppOpsManager) context.getSystemService(Context.APP_OPS_SERVICE);
+            try {
+                Method method = AppOpsManager.class.getDeclaredMethod("checkOp", int.class, int.class,
+                        String.class);
+                return AppOpsManager.MODE_ALLOWED == (int) method.invoke(manager, op,
+                        Binder.getCallingUid(), context.getPackageName());
+            } catch (Exception e) {
+                Log.e(TAG, Log.getStackTraceString(e));
+            }
         }
         return false;
     }
@@ -212,18 +214,19 @@ public class SettingsCompat {
                 || Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             return false;
         }
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+            AppOpsManager manager = (AppOpsManager) context.getSystemService(Context.APP_OPS_SERVICE);
+            try {
+                Method method = AppOpsManager.class.getDeclaredMethod("setMode", int.class, int.class,
+                        String.class, int.class);
+                method.invoke(manager, op, Binder.getCallingUid(), context.getPackageName(),
+                        allowed ? AppOpsManager.MODE_ALLOWED : AppOpsManager
+                                .MODE_IGNORED);
+                return true;
+            } catch (Exception e) {
+                Log.e(TAG, Log.getStackTraceString(e));
 
-        AppOpsManager manager = (AppOpsManager) context.getSystemService(Context.APP_OPS_SERVICE);
-        try {
-            Method method = AppOpsManager.class.getDeclaredMethod("setMode", int.class, int.class,
-                    String.class, int.class);
-            method.invoke(manager, op, Binder.getCallingUid(), context.getPackageName(),
-                    allowed ? AppOpsManager.MODE_ALLOWED : AppOpsManager
-                            .MODE_IGNORED);
-            return true;
-        } catch (Exception e) {
-            Log.e(TAG, Log.getStackTraceString(e));
-
+            }
         }
         return false;
     }

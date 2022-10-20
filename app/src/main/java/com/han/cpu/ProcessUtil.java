@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 /**
- * 进程相关工具类
+ * 进程相关工具类  高版本已失效
  * Created by hui.zhao on 2016/6/6.
  */
 public class ProcessUtil {

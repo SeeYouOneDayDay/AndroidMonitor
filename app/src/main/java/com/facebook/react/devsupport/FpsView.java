@@ -49,8 +49,7 @@ public class FpsView extends FrameLayout {
         findViewById(R.id.iv_close).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                getContext().startService(
-                        new Intent(getContext(), FPSService.class).putExtra(FPSService.FPS_COMMAND, FPSService.FPS_COMMAND_CLOSE));
+                getContext().startService(new Intent(getContext(), FPSService.class).putExtra(FPSService.FPS_COMMAND, FPSService.FPS_COMMAND_CLOSE));
             }
         });
         mWindowManager = (WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE);
@@ -106,7 +105,10 @@ public class FpsView extends FrameLayout {
     private void setCurrentFPS(double currentFPS, double currentJSFPS, int droppedUIFrames, int total4PlusFrameStutters) {
         String fpsString = String.format(
                 Locale.US,
-                "UI: %.1f fps\n%d dropped so far\n%d stutters (4+) so far\nJS: %.1f fps",
+                "UI: %.1f fps" +
+                        "\n%d dropped so far" +
+                        "\n%d stutters (4+) so far" +
+                        "\nJS: %.1f fps",
                 currentFPS,
                 droppedUIFrames,
                 total4PlusFrameStutters,
